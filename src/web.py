@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import request
 import logging
-from .sql import retrieve_range
+from sql import retrieve_range
 
 # Set up logger
 hdlr = logging.FileHandler('log.log')

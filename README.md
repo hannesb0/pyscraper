@@ -42,4 +42,9 @@ To run the application, just execute the script `menu.py`. And this menu will be
 
 To test the web API, just paste one of the following URLs into your browser, change the start and end data respectively:
 
-* http://127.0.0.1:8080/commodity?start_date=2019-05-05&end_date=2019-05-10&commodity_type=gold
+* [http://127.0.0.1:8080/commodity?start_date=2019-05-05&end_date=2019-05-10&commodity_type=gold](http://127.0.0.1:8080/commodity?start_date=2019-05-05&end_date=2019-05-10&commodity_type=gold)
+* [http://127.0.0.1:8080/commodity?start_date=2019-05-05&end_date=2019-05-10&commodity_type=silver[(ttp://127.0.0.1:8080/commodity?start_date=2019-05-05&end_date=2019-05-10&commodity_type=silver)
+
+The response will look something like this:
+
+        {'data': {'2019-05-05': 1285.85, '2019-05-06': 1284.15, '2019-05-07': 1286.05, '2019-05-08': 1282.25, '2019-05-09': 1284.55, '2019-05-10': 1286.7}, 'mean': 1284.92, 'variance': 2.63}

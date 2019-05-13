@@ -13,6 +13,13 @@ It is recommended to create a virtual Python environment (I used Anaconda). Then
 * `flask`
 * `BeautifulSoup4`
 
+In the scope of this project, a MySQL database server has to be running on the local machine. These are the settings used to connect to the MySQL database:
+
+    'host'     : 'localhost',
+    'database' : 'pyscraper',
+    'user'     : 'user',
+    'password' : '$a8E21&3ie'
+
 To run the application, just execute the script `menu.py`. And this menu will be presented to you: 
 
     =================================================
@@ -32,3 +39,7 @@ To run the application, just execute the script `menu.py`. And this menu will be
     | - API web-service running: [ ]                |
     =================================================
     >
+
+To test the web API, just paste one of the following URLs into your browser, change the start and end data respectively:
+
+* http://127.0.0.1:8080/commodity?start_date=2019-05-05&end_date=2019-05-10&commodity_type=gold
